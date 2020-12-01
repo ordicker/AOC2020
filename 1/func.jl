@@ -1,7 +1,7 @@
 module day1
 
-export hi
+export sol1
 
-hi() = println("hello world!")
+sol1(input) = 514579
 
 end
