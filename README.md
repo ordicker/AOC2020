@@ -5,7 +5,7 @@ Dicker's family attempt to solve Advent of Code 2020
 
 ## Goals 
 
-- [ ] have fun 
+- [V] have fun 
 - [ ] work together 
 - [ ] learn Julia 
 - [ ] improve git workflow 
