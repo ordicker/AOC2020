@@ -11,6 +11,7 @@ input1=
 
 ans1 = 514579
 
+println("part 1: ")
 print("test1: ")
 myans1 = day1.sol1(input1)
 if(myans1 == ans1)
@@ -20,7 +21,7 @@ else
 end
 
 
-real_input =
+input_part1 =
 "1935
 1956
 1991
@@ -221,5 +222,21 @@ real_input =
 1502
 1927
 1946"
-solution = day1.sol1(real_input)
+
+solution = day1.sol1(input_part1)
+println("The answer is: $solution")
+
+ans1 = 241861950
+
+println("part 2: ")
+print("test1: ")
+myans1 = day1.sol2(input1)
+if(myans1 == ans1)
+    println("right!")
+else
+    println("wrong! your answer is $ans1, expected: $myans1")
+end
+
+input_part2 = "2"
+solution = day1.sol2(input_part1)
 println("The answer is: $solution")

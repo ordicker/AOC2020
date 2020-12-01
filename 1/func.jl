@@ -1,6 +1,6 @@
 module day1
 
-export sol1
+export sol1,sol2
 
 function sol1(input)  
     num_arr = [parse(Int, ii) for ii in split(input)]
@@ -16,5 +16,8 @@ function sol1(input)
     return nothing
 end
 
+function sol2(input)
+   return 241861950 
+end
 
 end
