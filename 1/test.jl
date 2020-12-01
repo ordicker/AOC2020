@@ -11,6 +11,7 @@ input1=
 
 ans1 = 514579
 
+print("test1: ")
 if(day1.sol1(input1) == ans1)
     println("right!")
 else
