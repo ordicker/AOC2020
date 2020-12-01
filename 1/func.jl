@@ -17,7 +17,26 @@ function sol1(input)
 end
 
 function sol2(input)
-   return 241861950 
+    num_arr = [parse(Int, ii) for ii in split(input)]
+    sort!(num_arr)
+    for big in reverse(num_arr)
+        for small in num_arr
+            if big<small
+                println("didn't find")
+                return nothing
+            end
+            
+            mid = 2020 -big -small
+            if mid<0
+                break
+            else
+                ind = findfirst(num_arr.==mid)
+                if ind ≠ nothing
+                    return big*num_arr[ind]*small
+                end
+            end
+        end
+    end
 end
 
 end

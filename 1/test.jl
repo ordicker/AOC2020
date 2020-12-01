@@ -237,6 +237,5 @@ else
     println("wrong! your answer is $ans1, expected: $myans1")
 end
 
-input_part2 = "2"
 solution = day1.sol2(input_part1)
 println("The answer is: $solution")
