@@ -12,10 +12,11 @@ input1=
 ans1 = 514579
 
 print("test1: ")
-if(day1.sol1(input1) == ans1)
+myans1 = day1.sol1(input1)
+if(myans1 == ans1)
     println("right!")
 else
-    println("wrong!")
+    println("wrong! your answer is $ans1, expected: $myans1")
 end
 
 
