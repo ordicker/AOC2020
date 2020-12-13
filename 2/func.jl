@@ -11,11 +11,10 @@ function sol1(input_path)
 
     	low_lim = parse(Int, reg_line[1]) 
     	high_lim = parse(Int, reg_line[2])
-    	element = convert(Char,reg_line[3]) 
+    	element = convert(Char,reg_line[3][1])
     	str = reg_line[4]
 
     	counter = count(x->x==element, str)
-        println(counter)
         if (counter >= low_lim && counter <= high_lim)
             valids = valids + 1    
         end

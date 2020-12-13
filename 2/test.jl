@@ -13,3 +13,5 @@ else
     println("wrong! your answer is $myans1, expected: $ans1")
 end
 
+myans = day2.sol1("input.txt")
+println("The answer is: $myans")
