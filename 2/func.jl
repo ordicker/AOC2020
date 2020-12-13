@@ -24,7 +24,23 @@ function sol1(input_path)
 end
 
 function sol2(input)  
-    
+    valids = 0
+    regex_name = r"^(\d*)-(\d*) (\w): (\w*)"
+
+    for line in eachline(input_path)
+        reg_line = match(regex_name, line)
+
+        first_loc = parse(Int, reg_line[1]) 
+        second_loc = parse(Int, reg_line[2])
+        element = reg_line[3]
+        str = reg_line[4]
+        
+        if ((str[first_loc] == element && str[second_loc] != element) || 
+            (str[first_loc] != element && str[second_loc] == element))
+            valids = valids + 1    
+        end
+    end
+    return valids
 end
 
 
