@@ -1,4 +1,4 @@
-module day2
+module day3
 
 export sol1, sol2
 
