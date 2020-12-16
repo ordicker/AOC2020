@@ -13,7 +13,7 @@ else
     println("wrong! your answer is $myans1, expected: $ans1")
 end
 
-myans = day3.sol1("input.txt")
+myans = day3.sol1("input1.txt")
 println("The answer is: $myans")
 
 
