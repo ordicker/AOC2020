@@ -31,7 +31,7 @@ function sol2(input_path)
 
         first_loc = parse(Int, reg_line[1]) 
         second_loc = parse(Int, reg_line[2])
-        element = reg_line[3]
+        element = convert(Char,reg_line[3][1])
         str = reg_line[4]
         
         if ((str[first_loc] == element && str[second_loc] != element) || 
