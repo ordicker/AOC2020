@@ -6,7 +6,7 @@ ans1=7
 
 println("part 1:")
 print("test1: ")
-myans1 = day3.sol1("input1.txt")
+myans1 = day3.sol1("input.txt")
 if(myans1 == ans1)
     println("right!")
 else
