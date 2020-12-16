@@ -18,6 +18,7 @@ println("The answer is: $myans")
 
 print("test2: ")
 myans2 = day2.sol2("input1.txt")
+ans2 =1 
 if(myans2 == ans2)
     println("right!")
 else

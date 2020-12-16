@@ -22,7 +22,7 @@ function sol1(input_path)
     return valids
 end
 
-function sol2(input)  
+function sol2(input_path)  
     valids = 0
     regex_name = r"^(\d*)-(\d*) (\w): (\w*)"
 
