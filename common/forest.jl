@@ -25,7 +25,6 @@ end
 ###############################################################################
 #                                  interface                                  #
 ###############################################################################
-Base.getindex(f::Forest,x::Int,y::Int) = f.data[x,y]
-Base.getindex(f::Forest,i::Int) = f.data[i]
-Base.setindex!(f::Forest,val,x::Int,y::Int) = f.data[x,y]=val
-Base.setindex!(f::Forest,val,i::Int) = f.data[i]=val
+Base.getindex(f::Forest,x::Int,y::Int) = f.data[x%f.size[1]+1,y%f.size[2]+1]
+Base.setindex!(f::Forest,val,x::Int,y::Int) = f.data[x+1,y+1]=val
+Base.size(f::Forest) = f.size
